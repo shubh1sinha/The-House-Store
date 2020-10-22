@@ -1,0 +1,1043 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+html
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden ;
+    overflow-y: scroll;
+     padding: 0; margin: 0; 
+     
+}
+body {  
+background-color:#fff1cb;;
+width:100%;
+height: 100%;
+ padding: 0; margin: 0;
+
+}
+/****************Body**********************/
+.rc_nav {
+  overflow: hidden;
+  background-color: #ff5722;
+  text-align: center;
+  z-index: 6;
+  position: -webkit-sticky;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.rc_nav a {
+ display: inline-block;
+ margin-right: -4px;  /* inline-block gap fix */
+ color: #fff;
+ padding: 22px 22px;
+ text-decoration: none;
+ font-size: 18px;
+ -webkit-transition: background 0.3s linear;
+ -moz-transition: background 0.3s linear;
+ -ms-transition: background 0.3s linear;
+ -o-transition: background 0.3s linear;
+ transition: background 0.3s linear;
+ z-index: 9;
+ font-family: 'Work Sans', sans-serif;
+}
+
+.rc_nav a:hover {
+  background-color: #111d5e;
+  color: #ff5722;
+}
+
+.rc_nav .icon {
+  display: none;
+}
+
+.rc_content {
+  text-align: center; 
+  padding-left:14px; 
+  font-family: 'Work Sans', sans-serif; 
+  margin-top: 100px;  
+  color: #111d5e;
+}
+
+
+@media screen and (max-width: 820px) {
+  .rc_nav a {display: none;}
+  .rc_nav a.icon {
+    float: right;
+    display: block;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .rc_nav.responsive {position: relative; top: 73px;}
+  .rc_nav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .rc_nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+}
+/*----------End Of Navigation---------------*/
+.header {
+  background-color: #111d5e;
+  text-align: center;
+  padding-top:5px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.header1 {
+  background-color: white;
+  text-align: center;
+  width:100%;
+} 
+.logo{
+    width:auto;
+    height:auto;
+    display: block;
+    margin-right:50%;
+    margin-left:30px;
+}
+
+
+/****Search Bar header*****/
+ /* ===========================
+   ====== Search Box ====== 
+   =========================== */
+
+.search
+{
+	border: 5px groove #CF5C3F;
+	overflow: auto;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+  margin-right:50px;
+  margin-top:30px;
+  width:30%;
+  float:right;
+}
+
+.search input[type="text"]
+{
+	border: 0px;
+	width: 67%;
+	padding: 10px 10px;
+  background-color:#fff1cb;
+}
+
+.search input[type="text"]:focus
+{
+	outline: 0;
+}
+
+.search input[type="submit"]
+{
+	border: 0px;
+	background: none;
+	background-color: #111d5e;
+	color: #fff;
+	float: right;
+	padding: 20px;
+	border-radius-top-right: 5px;
+	-moz-border-radius-top-right: 5px;
+	-webkit-border-radius-top-right: 5px;
+	border-radius-bottom-right: 5px;
+	-moz-border-radius-bottom-right: 5px;
+	-webkit-border-radius-bottom-right: 5px;
+        cursor:pointer;
+}
+
+/** Contact Part**/
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 380px;
+  width: 100%;
+  height: 450px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+}
+/** Slider part **/
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: Orange;
+  font-size: 100px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/** Rice Product **/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 10px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #111d5e;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: center;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+/* About Page */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left:9%;
+  margin-right:-10%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  margin-left:10px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #111d5e;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #111d5e;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #ff5722;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/*** Footer Css***/
+footer{
+	position: relative;
+	bottom: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #111d5e;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed h3 span{
+	color:  orange;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-center p a{
+	color:  orange;
+	text-decoration: none;;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-distributed .footer-icons{
+font-family: 'Work Sans', sans-serif;
+	margin-top: 25px;
+}
+
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+font-family: 'Work Sans', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+    font-family: 'Work Sans', sans-serif;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+    font-family: 'Work Sans', sans-serif;
+	}
+
+}
+/*** Model Login Popup**/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ff5722;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #111d5e;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: none; /* Fallback color */
+  padding-top: 60px;
+  border:2px solid #111d5e;
+  float: center;
+  text-align: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto 3% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 3px solid #111d5e;
+  width: 80%; /* Could be more or less, depending on screen size */
+    float: center;
+  text-align: center;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/** Contact Section**/
+
+
+
+
+/** Registration Form **/
+.open-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: static;
+  top: 20px;
+  right: 150px;
+  width: 100px;
+  padding:14px;
+ 
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottoom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.hb{
+    background-color: #ff5722;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  top:10px;
+  float: right;
+}
+/** New Top Nav Bar**/
+.topnav {
+  overflow: hidden;
+  background-color: #111d5e;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: Orange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: orange;
+  color: #111d5e;
+}
+
+
+.topnav .login-container {
+  float: right;
+}
+
+.topnav .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #555;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .login-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .login-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/** Categoty Section **/
+.categories{
+border: 8px double #ff5722;
+padding:3%;
+background-color: #111d5e;
+}
+.categories H1{
+font-size: 50px;
+font-family: 'Roboto Mono', monospace;
+color: whitesmoke;
+}
+.navigation{
+  position: fixed;
+}
+.banner{
+  padding-top:20px;
+  padding-bottom: -10px ;
+  width:50%;
+  height:auto;
+}
+.banner img{
+  
+  width:90%;
+  padding-bottom: 0px;
+  float: center;
+}
+
+
+/** 3rd Section **/
+.pdp__images {
+    display: block;
+    margin: -8px auto 0;
+    margin-top: -8px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 220px;
+    align-items: center;
+}
+.pdp__images--variant {
+    min-height: 0;
+}
+.pdp-product {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #ff5722;
+  font-family: Arial, Helvetica, sans-serif;
+  float: center;
+  
+ 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #111d5e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #111d5e;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #111d5e;
+  color: #ff5722;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff1cb;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: #111d5e;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column11 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #fff1cb;
+  height: 350px;
+  text-align: center;
+ 
+}
+
+.column11 a {
+  float: none;
+  color: #ff5722;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.column11 a:hover {
+  background-color:#111d5e ;
+  color:#ff5722;
+  
+}
+
+/* Clear floats after the columns */
+.row11:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}

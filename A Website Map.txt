@@ -1,0 +1,88 @@
+                 House Store (Website Map)
+              Hope You Will Like the Webiste:-
+
+Features:-
+       header
+       chatbot (Full Validation and response collective)
+       Sliders
+       Service Stripes(Our Services Location)
+       Modal Popup(SignIn/Login)->Validated
+       Pagination Design
+       Product Card
+       Contact Form(Validated)
+       Add to Cart (Modal Checkout)
+       Product Description(Automatic Amount Loading)-> product.html
+       Map attached in website
+       Subscription Button(Footer)
+       footer
+       Live Running Clock(Footer-Right)
+       Proper Linkage and No breakage in Links
+       Responsiveness(60%) 
+       
+
+       *Refer Below for detailed view of all website.
+----------------------------x-----------------------------------------
+
+Sir/Mam,You will able to understand Clearly by the website Map:-
+
+Nav Bar:1 (DARK BLUE COLOR) 
+
+Login / Registration:- Modal Popup
+Add to Cart:-- Checkot Model
+
+Header 2:(Logo and Search Bar)
+Logo is created by me !
+
+
+NAV BAR:3(Orange Color)
+Home- Index
+            Where :-
+            Slider Section
+            Product Section------- Rice/Flour( Can Hover pictures and View Product Button)
+            Service Section:-- Using Strap to show state where service is provides
+ 
+Footer Section:-Reach Us // Logo (All Menu links in This Section) // About Us// Subscripe for Update (VALIDATION Given)//Live Running Clock
+
+Chat-Bot:- A valid chatbot is added you can use it as you want and the detail is sent to my mail what you will enter.
+
+
+Rice/Flour Page:-  6 product Card 
+                    Pictures of Card -------- Product Description Page
+Product Description Page=> Just click the + and – button you will get the Amount to pay . 
+
+PAY button ------- Add to Cart Page.
+
+Contact Page:- A query Validated form is there 
+                             Map of the office is attached their.
+
+About Us Page:- The page consists of small description about website and product card about Me!
+          The VISIT MY WEBSITE button will land you to LinkedIn Page .
+
+Add  TO Cart Page: Modal Checkout Page which when clicked land you to Index Page.
+
+
+*60% part of the website is Responsive.
+ 
+*Every Page Contains Header and Footer and  Chat-bot and live running clock.
+---------------------x--------------------------------------------
+
+All html Pages:-
+       index.html
+       about.html
+       checkout.html
+       contact.html
+       flour.html
+       help.html
+       product.html
+       rice.html
+       welcome.html
+
+All Css Pages:-
+      style.Css
+      cstyle.Css
+
+All Script Pages:-
+      script.Js
+      cscript.js
+
+      -------------------End----------------
